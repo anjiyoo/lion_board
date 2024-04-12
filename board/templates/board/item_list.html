@@ -1,0 +1,15 @@
+<h1>ListView</h1>
+
+{% for object in object_list %}
+<div>
+    <h3><a href="{% url 'detail' object.id %}">{{object.title}}</a></h3>
+</div>
+{% endfor %}
+
+<div>
+    <form action="{% url 'create'%}">
+    <input type="submit" value="글쓰기" id="">
+    </form>
+</div>
+
+
